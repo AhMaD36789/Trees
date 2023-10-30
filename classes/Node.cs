@@ -68,13 +68,13 @@
             Node f = new Node("f");
             Node g = new Node("g");
 
-            a.intValue = 12;
-            b.intValue = 6;
-            c.intValue = 6;
+            a.intValue = 7;
+            b.intValue = 4;
+            c.intValue = 12;
             d.intValue = 3;
-            e.intValue = 3;
-            f.intValue = 3;
-            g.intValue = 4;
+            e.intValue = 5;
+            f.intValue = 11;
+            g.intValue = 15;
 
             a.left = b;
             a.right = c;
@@ -90,7 +90,7 @@
             //         b11    c3
             //         / \     \
             //       d4  e15    f12
-            //       z           x
+
         }
 
     }
