@@ -199,16 +199,18 @@
 
         /// the difference between the longest path in the left and the right == 1
         /// balanced tree: same code but instead of returning the value stored return 1
-        /// the difference between left and right must equal 1
+        /// the difference between left and right must equal at most 1
         /// 
 
         public static int MaxRootToLeafSum(Node root)
         {
             if (root == null)
                 return int.MinValue;
+            //return 0;
 
             if (root.left == null && root.right == null)
                 return root.intValue;
+            //return 1;
 
             return root.intValue +
                 Math.Max
@@ -216,6 +218,7 @@
                     MaxRootToLeafSum(root.left),
                     MaxRootToLeafSum(root.right)
                 );
+            // return 1 + MaxRootToLeafSum(root.left) + MaxRootToLeafSum(root.right);
         }
 
         public static int height(Node root)
