@@ -14,15 +14,16 @@
                     return true;
 
                 else if (traversal.intValue > value)
-                    traversal = traversal.Left;
+                    traversal = traversal.left;
+
                 else
-                    traversal = traversal.Right;
+                    traversal = traversal.right;
 
             }
             return false;
         }
 
-        public void AddToBinarySearchTree(int value)
+        public void AddToBinarySearchTreeIterative(int value)
         {
             Node traversal = Root;
 
@@ -32,23 +33,24 @@
                     throw new Exception("value already exists");
 
                 if (value < traversal.intValue)
-                    if (traversal.Left == null)
+
+                    if (traversal.left == null)
                     {
-                        traversal.Left = new Node(value, "h");
+                        traversal.left = new Node(value, "h");
                         break;
                     }
                     else
-                        traversal = traversal.Left;
+                        traversal = traversal.left;
 
                 else
                 {
-                    if (traversal.Right == null)
+                    if (traversal.right == null)
                     {
-                        traversal.Right = new Node(value, "h");
+                        traversal.right = new Node(value, "h");
                         break;
                     }
                     else
-                        traversal = traversal.Right;
+                        traversal = traversal.right;
                 }
             }
         }

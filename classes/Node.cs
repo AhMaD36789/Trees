@@ -4,35 +4,35 @@
     {
         public string value { get; set; }
         public int intValue { get; set; }
-        public Node? Left { get; set; }
-        public Node? Right { get; set; }
+        public Node? left { get; set; }
+        public Node? right { get; set; }
 
         public Node()
         {
             value = string.Empty;
-            Left = null;
-            Right = null;
+            left = null;
+            right = null;
         }
 
         public Node(string value)
         {
             this.value = value;
-            Left = null;
-            Right = null;
+            left = null;
+            right = null;
         }
 
         public Node(int value)
         {
             this.intValue = value;
-            Left = null;
-            Right = null;
+            left = null;
+            right = null;
         }
         public Node(int intvalue, string Value)
         {
             value = Value;
             intValue = intvalue;
-            Left = null;
-            Right = null;
+            left = null;
+            right = null;
         }
 
         public Node TreeInitialization()
@@ -54,11 +54,11 @@
             //e.intValue = 15;
             //f.intValue = 12;
 
-            //a.Left = b;
-            //a.Right = c;
-            //b.Left = d;
-            //b.Right = e;
-            //c.Right = f;
+            //a.left = b;
+            //a.right = c;
+            //b.left = d;
+            //b.right = e;
+            //c.right = f;
 
             Node a = new Node("a");
             Node b = new Node("b");
@@ -68,20 +68,20 @@
             Node f = new Node("f");
             Node g = new Node("g");
 
-            a.intValue = 7;
-            b.intValue = 4;
-            c.intValue = 12;
+            a.intValue = 12;
+            b.intValue = 6;
+            c.intValue = 6;
             d.intValue = 3;
-            e.intValue = 5;
-            f.intValue = 11;
-            g.intValue = 15;
+            e.intValue = 3;
+            f.intValue = 3;
+            g.intValue = 4;
 
-            a.Left = b;
-            a.Right = c;
-            b.Left = d;
-            b.Right = e;
-            c.Left = f;
-            c.Right = g;
+            a.left = b;
+            a.right = c;
+            b.left = d;
+            b.right = e;
+            c.left = f;
+            c.right = g;
 
             return a;
 

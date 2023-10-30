@@ -8,20 +8,16 @@ namespace Trees
         {
             Node test = new Node();
 
+            Node test2 = new Node();
+
             test = test.TreeInitialization();
+            test2 = test2.TreeInitialization();
 
+            //Methods.print(Methods.DepthFirstIterative(test));
 
-            var depthFirstIterative = Methods.DepthFirstIterative(test);
+            //Methods.print(Methods.DepthFirstRecursive(test));
 
-            //Methods.print(depthFirstIterative);
-
-            var depthFirstRecursive = Methods.DepthFirstRecursive(test);
-
-            //Methods.print(depthFirstRecursive);
-
-            var breadthFirstIterative = Methods.BreadthFirstIterative(test);
-
-            //Methods.print(breadthFirstIterative);
+            //Methods.print(Methods.BreadthFirstIterative(test));
 
             //Console.WriteLine(Methods.BreadthFirstSearch(test, "c"));
 
@@ -35,6 +31,17 @@ namespace Trees
 
             //Console.WriteLine(Methods.MaxRootToLeafSum(test));
 
+            //Console.WriteLine(Methods.height(test));
+
+            //Methods.mirror(test);
+
+            //Console.WriteLine(Methods.symmetric(test));
+
+            //Console.WriteLine(Methods.ChildrenSumParent(test));
+
+            //Console.WriteLine(Methods.IdenticalTrees(test, test2));
+
+            //Methods.print(Methods.BreadthFirstIterative(test));
         }
     }
 }
