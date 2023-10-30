@@ -15,8 +15,6 @@ namespace Trees
 
             //Methods.print(depthFirstIterative);
 
-            //Console.WriteLine();
-
             var depthFirstRecursive = Methods.DepthFirstRecursive(test);
 
             //Methods.print(depthFirstRecursive);
@@ -35,7 +33,8 @@ namespace Trees
 
             //Console.WriteLine(Methods.TreeMinRecursive(test));
 
-            Console.WriteLine(Methods.MaxRootToLeafSum(test));
+            //Console.WriteLine(Methods.MaxRootToLeafSum(test));
+
         }
     }
 }
